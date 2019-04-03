@@ -22,7 +22,7 @@ class Kmeans:
             for i in range(self.k):
                 self.classifications[i] = []
 
-            for featureset in X:
+            for featureset in data:
                 distances = [np.linalg.norm(featureset-self.centroids[centroid]) for centroid in self.centroids]
                 classification = distances.index(min(distances))
                 self.classifications[classification].append(featureset)
@@ -30,17 +30,48 @@ class Kmeans:
             prev_centroids = dict(self.centroids)
 
             for classification in self.classifications:
-                pass
-                # self.centroids[classification] = np.average(self.classifications[classification], axis=0)
+                self.centroids[classification] = np.average(self.classifications[classification], axis=0)
 
-    def predict(self):
-        pass
+            optimized = True
+
+            for c in self.centroids:
+                originial_centroid = prev_centroids[c]
+                current_centroid = self.centroids[c]
+                if np.sum((current_centroid-originial_centroid)/originial_centroid*100.0) > self.tol:
+                    optimized = False
+
+            if optimized:
+                break
+
+    def predict(self, data):
+        distances = [np.linalg.norm(data - self.centroids[centroid]) for centroid in self.centroids]
+        classification = distances.index(min(distances))
+        return classification
 
 
 X = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6],
               [9, 11]])
 
-plt.scatter(X[:, 0], X[:, 1], s=150)
-plt.show()
+# plt.scatter(X[:, 0], X[:, 1], s=150)
+# plt.show()
 
-colors = 10 * ["g.", "r.", "c.", "b.", "k."]
+colors = 10 * ["g", "r", "c", "b", "k"]
+
+clf = Kmeans()
+clf.fit(X)
+for centriod in clf.centroids:
+    plt.scatter(clf.centroids[centriod][0], clf.centroids[centriod][1], marker='o', color='k', s=150, linewidth=5)
+
+for classfification in clf.classifications:
+    color = colors[classfification]
+    for featureset in clf.classifications[classfification]:
+        plt.scatter(featureset[0], featureset[1], marker='x', color=color, s=150, linewidths=5)
+
+
+unknows = np.array([[1, 3], [8, 9], [0, 3],[5, 4], [6, 4]])
+
+for unknow in unknows:
+    classfification = clf.predict(unknow)
+    plt.scatter(unknow[0], unknow[1], marker='*', color=colors[classfification], s=150)
+
+plt.show()
