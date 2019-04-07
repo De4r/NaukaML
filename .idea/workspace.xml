@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b32124f-c79d-4064-8493-460949381628" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ML_Kmeans_shift_algo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML_Kmeans_nonnumeric_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="59" lean-forward="true" selection-end-line="59" />
+            <state relative-caret-position="986">
+              <caret line="59" selection-end-line="59" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -27,8 +28,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML_Kmeans_shift_titanic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+            <state relative-caret-position="773">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML_kmeans_customed.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="57" column="39" lean-forward="true" selection-start-line="51" selection-end-line="57" selection-end-column="39" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -37,12 +50,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ML_kmeans_customed.py">
+        <entry file="file://$PROJECT_DIR$/ML_Kmeans_shift_algo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="33">
+              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#123#2498#0" />
               </folding>
             </state>
           </provider>
@@ -90,6 +104,7 @@
         <option value="$PROJECT_DIR$/ML_Kmeans_custom_vs_sklearn.py" />
         <option value="$PROJECT_DIR$/ML_Shift_Kmeans.py" />
         <option value="$PROJECT_DIR$/ML_Kmeans_shift_titanic.py" />
+        <option value="$PROJECT_DIR$/ML_Kmeans_shift_algo.py" />
       </list>
     </option>
   </component>
@@ -105,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +135,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ML_Kmeans_shift_titanic">
+  <component name="RunManager" selected="Python.ML_Kmeans_shift_algo">
     <configuration name="ML_Kmeans_custom_vs_sklearn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Nauka programowania" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,7 +175,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ML_Kmeans_nonnumeric_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ML_Kmeans_shift_algo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Nauka programowania" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,7 +187,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_Kmeans_nonnumeric_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_Kmeans_shift_algo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ML_Kmeans_shift_algo" />
         <item itemvalue="Python.ML_Kmeans_shift_titanic" />
         <item itemvalue="Python.ML_Shift_Kmeans" />
         <item itemvalue="Python.ML_kmeans_customed" />
         <item itemvalue="Python.ML_Kmeans_custom_vs_sklearn" />
-        <item itemvalue="Python.ML_Kmeans_nonnumeric_data" />
       </list>
     </recent_temporary>
   </component>
@@ -388,16 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML_knearest_neigh_algo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML_knearest_neigh_algo_vs_cancer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -480,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ML_Kmeans_nonnumeric_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="59" lean-forward="true" selection-end-line="59" />
+        <state relative-caret-position="986">
+          <caret line="59" selection-end-line="59" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -490,20 +495,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ML_Kmeans_shift_titanic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        <state relative-caret-position="773">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ML_knearest_neigh_algo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ML_kmeans_customed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        <state relative-caret-position="510">
+          <caret line="57" column="39" lean-forward="true" selection-start-line="51" selection-end-line="57" selection-end-column="39" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_Kmeans_shift_algo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#123#2498#0" />
           </folding>
         </state>
       </provider>
